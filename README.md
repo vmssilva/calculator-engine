@@ -51,8 +51,8 @@ This project is simple to run locally using **Java 17+**. You can compile and ex
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/vmssilva/calculator.git
-cd calculator
+git clone https://github.com/vmssilva/calculator-api.git
+cd calculator-api
 ```
 
 ### 2️⃣ Compile
@@ -60,7 +60,7 @@ cd calculator
 Using **javac**:
 
 ```bash
-javac -d out src/com/github/vmssilva/calculator/**/*.java
+javac -d out src/com/github/vmssilva/calculator/api/**/*.java
 ```
 
 This will compile all Java files into the `out` directory.
@@ -68,7 +68,7 @@ This will compile all Java files into the `out` directory.
 ### 3️⃣ Run
 
 ```bash
-java -cp out com.github.vmssilva.calculator.CalculatorApp
+java -cp out com.github.vmssilva.calculator.api.CalculatorApp
 ```
 
 You should see the result of the expression(s) in the console.
@@ -93,8 +93,8 @@ mvn test
 ## 🛠 Usage Example
 
 ```java
-import com.github.vmssilva.calculator.parser.RecursiveParser;
-import com.github.vmssilva.calculator.ast.Expression;
+import com.github.vmssilva.calculator.api.parser.RecursiveParser;
+import com.github.vmssilva.calculator.api.ast.Expression;
 
 public class CalculatorApp {
     public static void main(String[] args) {
